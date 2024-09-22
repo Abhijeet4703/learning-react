@@ -30,7 +30,7 @@ function App() {
 
   const copyPasswordToClipboard = useCallback(() => {
     passwordRef.current?.select();
-    passwordRef.current?.setSelectionRange(0, 999);
+    passwordRef.current?.setSelectionRange(0, 999);  //selects the range in the textbox if 3 then only 3 char is selected
     window.navigator.clipboard.writeText(password)
   }, [password])
 

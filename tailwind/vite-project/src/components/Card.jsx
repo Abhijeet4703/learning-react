@@ -1,5 +1,6 @@
 import React from "react";
 
+//props
 function Card({username,btntext}){
     return(
         <div class="relative h-[400px] w-[300px] rounded-md">
